@@ -19,8 +19,9 @@ const Footer = () => {
         <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
           <Logo />
           <p className="text-lg">
-            Making the world a better place through constructing elegant
-            hierarchies.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem id vero
+            ipsum iste qui minus quidem soluta omnis facere accusantium neque
+            explicabo saepe aut, fugiat asperiores molestias beatae non dolorem?
           </p>
           <ul className="flex items-center gap-4 lg:gap-6 mb-6 lg:mb-0">
             {socialLinks.map((link, index) => (
@@ -57,7 +58,7 @@ const Footer = () => {
       {/* Copyrights */}
       <div className="container border-t border-slate-700">
         <p className="capitalize pt-4 text-center lg:text-start">
-          {`© ${currentYear} ocean, inc. all rights reserved.`}
+          {`© ${currentYear} Aluminium.`}
         </p>
       </div>
       {/* Copyrights */}

@@ -1,18 +1,16 @@
 import Button from "@/components/Button";
-import FeatureBlock from "@/components/FeatureBlock";
-import FeatureCard from "@/components/FeatureCard";
 import Heading from "@/components/Heading";
-import PricingSection from "@/components/PricingSection";
+import Produits from "@/components/Produits";
 import TestimonialCard from "@/components/TestimonialCard";
 import { ThreeDCardDemo } from "@/components/ThreeDCardDemo";
 import { clients } from "@/constants/clients";
-import { features, featuresBlock } from "@/constants/features";
 import { testimonials } from "@/constants/testimonials";
 import { ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const images = ["/alum2.png", "/bg2.png", "/alum3.png"];
   return (
     <div className="overflow-x-hidden pt-24 lg:pt-28 antialiased">
       <div className="relative container">
@@ -79,13 +77,21 @@ export default function Home() {
             />
           ))}
         </section>
+        {/* slide image section */}
+        <section className="flex flex-col items-center gap-y-12 md:gap-y-20 lg:gap-y-28">
+          <Heading title="Nos Produits" isCentered />
+          <div className="w-full">
+            <Produits images={images} />
+          </div>
+        </section>
         {/* Clients section */}
         <section className="gap-y-12 md:gap-y-20 lg:gap-y-28">
-          <Heading title="Votres Services" isCentered />
-          <div className="grid grid-flow-row grid-cols-3 gap-2">
+          <Heading title="Vos Services" isCentered />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <ThreeDCardDemo />
             <ThreeDCardDemo />
             <ThreeDCardDemo />
+            {/* Vous pouvez ajouter plus d'instances de ThreeDCardDemo si nécessaire */}
           </div>
         </section>
 
@@ -104,7 +110,7 @@ export default function Home() {
               className="absolute -z-50 w-[1400px] h-[670px] top-0 left-0 opacity-5"
             />
             <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-start">
-              <Heading title="Powerful features to help you manage all your leads." />
+              <Heading title="Apsum dolor sit amet consectetur." />
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
                 Apsum dolor sit amet consectetur. Aliquam elementum elementum in
                 ultrices. Dui maecenas ut eros turpis ultrices metus morbi
@@ -147,15 +153,16 @@ export default function Home() {
         <section id="contact">
           <div className="bg-slate-800 rounded-lg px-8 lg:px-24 py-8 lg:py-12 flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="flex flex-col gap-4 text-center lg:text-start">
-              <Heading title="Let’s try our service now!" />
+              <Heading title="Essayons notre service maintenant!" />
               <p className="max-w-[35rem] leading-normal text-lg">
-                Experience the power of Ocean CRM dashboard for engineering
-                teams. Boost productivity and streamline collaboration. Get
-                started today!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae possimus dicta dolor recusandae. Eaque vel labore
+                iusto asperiores. Qui soluta dolore sint accusamus pariatur
+                incidunt, illum officia ab voluptatem cum?
               </p>
             </div>
             <Button>
-              get started
+              Commencer
               <MoveRight className="w-4 h-4" />
             </Button>
           </div>
