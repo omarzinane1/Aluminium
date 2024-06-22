@@ -17,8 +17,8 @@ export default function Home() {
     <div className="overflow-x-hidden pt-24 lg:pt-28 antialiased">
       <div className="relative container">
         <Image
-          src="/alum.png"
-          width={1920}
+          src="/bg.png"
+          width={1900}
           height={1080}
           alt="test"
           className="absolute -z-50 w-full min-h-screen md:max-h-[670px] md:h-full lg:min-h-screen -top-20 left-0 opacity-20"
@@ -35,9 +35,10 @@ export default function Home() {
               </p>
               <Heading title="Élevez Vos Projets avec Nos Solutions en Aluminium" />
               <p className="max-w-[46rem] leading-normal sm:text-lg sm:leading-8">
-                Boost engineering teams productivity with Ocean CRM dashboard
-                that streamlines project management, collaboration, and
-                data-driven decision-making.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                illo error ratione sequi doloremque hic ad rerum recusandae
+                numquam illum saepe natus amet, placeat veritatis pariatur
+                voluptatibus suscipit velit expedita.
               </p>
               <div className="flex items-center gap-4">
                 <Link href="/devis" passHref>
@@ -79,10 +80,13 @@ export default function Home() {
           ))}
         </section>
         {/* Clients section */}
-        <section className="grid grid-flow-row grid-cols-3 gap-2 gap-y-12 md:gap-y-20 lg:gap-y-28">
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
+        <section className="gap-y-12 md:gap-y-20 lg:gap-y-28">
+          <Heading title="Votres Services" isCentered />
+          <div className="grid grid-flow-row grid-cols-3 gap-2">
+            <ThreeDCardDemo />
+            <ThreeDCardDemo />
+            <ThreeDCardDemo />
+          </div>
         </section>
 
         {/* Features section */}
