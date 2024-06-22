@@ -21,13 +21,11 @@ const MobileNav = () => {
         {!isOpen ? <Menu /> : <X />}
       </div>
       <figure
-        className={`absolute rounded-md right-2 origin-top top-20 ${
-          isOpen
-            ? "scale-y-100 opacity-100 visible"
-            : "scale-y-50 opacity-0 hidden"
-        } w-auto bg-slate-800 p-2 transition-all z-50`}
+        className={`absolute rounded-md right-2 origin-top top-20 w-screen ${
+          isOpen ? "translate-y-0 opacity-100 visible" : "-translate-y-5 opacity-0 invisible"
+        } w-auto bg-slate-800 p-6 transition-all duration-300 ease-in-out z-50`}
       >
-        <nav className="w-full h-full flex flex-col space-y-2 capitalize font-normal tracking-wide">
+        <nav className="w-full h-full flex flex-col transition-shadow duration-300 space-y-2 capitalize font-normal tracking-wide">
           {navLinks.map((link, index) => (
             <Link
               key={index}
