@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
+import Process from "@/components/Process";
 import Produits from "@/components/Produits";
 import TestimonialCard from "@/components/TestimonialCard";
 import { ThreeDCardDemo } from "@/components/ThreeDCardDemo";
@@ -141,6 +142,10 @@ export default function Home() {
         {/* Testimonials section */}
         <section id="testimonials" className="flex flex-col gap-8">
           <Heading title="Témoignages" isCentered />
+          <h4 className="text-center">
+            « Nous considérons nos clients comme des invités, à une fête où nous
+            sommes les hôtes »
+          </h4>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
@@ -148,6 +153,15 @@ export default function Home() {
           </div>
         </section>
         {/* Testimonials section */}
+        {/* Process section */}
+        <section id="process" className="flex flex-col gap-8">
+          <Heading title="COMMENT ÇA MARCHE" isCentered />
+          <h4 className="text-center">
+            « Ensemble pour trouver la meilleur solution avec le meilleur prix »
+          </h4>
+          <Process />
+        </section>
+        {/** End Process section */}
 
         {/* Contact section */}
         <section id="contact">
@@ -166,6 +180,9 @@ export default function Home() {
               <MoveRight className="w-4 h-4" />
             </Button>
           </div>
+        </section>
+        <section id="Map">
+          <div></div>
         </section>
 
         {/* Contact section */}
