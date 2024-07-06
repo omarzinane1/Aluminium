@@ -127,7 +127,7 @@ export default function Home() {
                 muted
                 poster="/path/to/poster.jpg"
               >
-                <source src="/path/to/video.mp4" type="video/mp4" />
+                <source src="/védio/Editor.mp4" type="video/mp4" />
                 <source src="/path/to/video.webm" type="video/webm" />
                 <source src="/path/to/video.ogv" type="video/ogg" />
                 Votre navigateur ne supporte pas la balise vidéo.
