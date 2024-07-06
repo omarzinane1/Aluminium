@@ -3,7 +3,7 @@ import { CheckCircle, FileText, PlayCircle, Truck } from "lucide-react";
 
 function Process() {
   return (
-    <div className="grid lg:grid-cols-4 grid-rows-4  justify-center items-start gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-center items-start">
       <div className="flex flex-col justify-center items-center p-8 rounded-md hover:bg-slate-800 gap-3">
         <div className="bg-white w-20 p-4 text-center rounded-full">
           <FileText size={48} color="black" />
